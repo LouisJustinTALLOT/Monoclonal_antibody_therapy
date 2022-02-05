@@ -1,7 +1,28 @@
+% !TEX program = xelatex
 \documentclass{article}
 \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+% \usepackage[english]{babel}
+% \usepackage{csquotes}
+
+% with xelatex
+\usepackage{fontspec}  % fontspec et xunicode sont facultatifs
+\usepackage{xunicode}  % pour les versions postérieures à 2018.
+
+\usepackage[a4paper, left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+
+\usepackage[sfdefault,lining]{FiraSans} %% option 'sfdefault' activates Fira Sans as the default text font
+\usepackage[fakebold]{firamath-otf}
+\renewcommand*\oldstylenums[1]{{\firaoldstyle #1}}
+
+
+\usepackage{graphicx}
 
 \usepackage{biblatex}
+
+\title{
+  \textbf{Monoclonal Antibody Therapy}
+}
 \author{Louis-Justin Tallot}
 \date{February 2022}
 
@@ -35,6 +56,9 @@
     
   
   \section*{Conclusion}
+
+% \appendix
+
   \printbibliography
 
 \end{document}
