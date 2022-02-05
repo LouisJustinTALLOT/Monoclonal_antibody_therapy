@@ -1,14 +1,60 @@
+% !TEX program = xelatex
 \documentclass{article}
 \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{csquotes}
 
-\title{Report Therapy by Monoclonal Antibodies}
+\usepackage[a4paper, left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+
+\usepackage[sfdefault,lining]{FiraSans} %% option 'sfdefault' activates Fira Sans as the default text font
+\usepackage[fakebold]{firamath-otf}
+\renewcommand*\oldstylenums[1]{{\firaoldstyle #1}}
+
+
+\usepackage{graphicx}
+
+\usepackage{biblatex}
+
+\title{
+  \textbf{Monoclonal Antibody Therapy}
+}
 \author{Louis-Justin Tallot}
 \date{February 2022}
 
+
+% \bibliographystyle{plain}
+\bibliography{report_therapy_monoclonal_antibodies.bib}
+
 \begin{document}
 
-\maketitle
+  \maketitle
 
-\section{Introduction}
+  \section*{Introduction}
+
+  \section{What is a monoclonal antibody ?}
+
+    \subsection{What is an antibody ?}
+
+    \subsection{Difference between monoclonal and polyclonal antibodies}
+
+    \subsection{Production of monoclonal antibodies}
+
+    \subsection{Characteristics of a monoclonal antibody}
+
+  \section{How are monoclonal antibodies used for therapy ?}
+
+    \subsection{Therapeutical activity of monoclonal antibodies}
+
+    \subsection{Commercial uses}
+
+    \subsection{Market analysis}
+    
+  
+  \section*{Conclusion}
+
+% \appendix
+
+  \printbibliography
 
 \end{document}
