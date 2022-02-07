@@ -1,0 +1,76 @@
+% !TEX program = xelatex
+\documentclass{beamer}
+% \usepackage[utf8]{inputenc}
+% \usepackage[T1]{fontenc}
+% \usepackage[english]{babel}
+% \usepackage{csquotes}
+
+% with xelatex
+\usepackage{fontspec}  % fontspec et xunicode sont facultatifs
+\usepackage{xunicode}  % pour les versions postérieures à 2018.
+
+% \usepackage[a4paper, left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\setlength{\parindent}{1em}
+% \setlength{\parskip}{1em}
+\usepackage{indentfirst}
+
+\usepackage[sfdefault,lining]{FiraSans} %% option 'sfdefault' activates Fira Sans as the default text font
+\usepackage[fakebold]{firamath-otf}
+\renewcommand*\oldstylenums[1]{{\firaoldstyle #1}}
+
+\usepackage[none]{hyphenat}
+
+\usepackage{graphicx}
+
+\usepackage{biblatex}
+
+\title{
+  \textbf{Monoclonal Antibody Therapy}
+}
+\author{Louis-Justin Tallot}
+\date{February 2022}
+
+\usetheme[progressbar=frametitle]{Metropolis}
+
+
+% \bibliographystyle{plain}
+\bibliography{report_therapy_monoclonal_antibodies}
+
+\begin{document}
+  \begin{frame}
+    \titlepage
+  \end{frame}
+
+
+
+  \section*{Introduction}
+  \input{sections/0_introduction.tex}
+
+  \section{What is a monoclonal antibody ?}
+
+    \subsection{What is an antibody ?}
+    \input{sections/1.1_what_is_an_antibody.tex}
+
+    \subsection{Difference between monoclonal and polyclonal antibodies}
+    \input{sections/1.2_difference_monoclonal_polyclonal.tex}
+
+    \subsection{Production of monoclonal antibodies}
+    \input{sections/1.3_production_monoclonal_antibodies.tex}
+
+    \subsection{Characteristics of a monoclonal antibody}
+    \input{sections/1.4_characteristics_monoclonal_antibody.tex}
+
+  \section{How are monoclonal antibodies used for therapy ?}
+
+    \subsection{Therapeutic activity of monoclonal antibodies}
+    \input{sections/2.1_therapeutic_activity.tex}
+
+    \subsection{Commercial uses}
+    \input{sections/2.2_commercial_uses.tex}
+
+    \subsection{Market analysis}
+  
+  
+  \section*{Conclusion}
+
+\end{document}
