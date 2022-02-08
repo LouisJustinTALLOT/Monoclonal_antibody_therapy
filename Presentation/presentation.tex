@@ -30,6 +30,8 @@
 \author{Louis-Justin Tallot}
 \date{February 2022}
 
+\usetheme{metropolis}
+
 \titlegraphic{\centering\vspace{7cm}\includegraphics[width=0.3\textwidth]{../Images/Logo_Mines_ParisTech.png}}
 
 
@@ -37,7 +39,12 @@
 \bibliography{report_therapy_monoclonal_antibodies}
 
 \begin{document}
+
   \maketitle
+
+  \begin{frame}{Table of contents}
+    \setbeamertemplate{section in toc}[sections numbered]
+    \tableofcontents
   \end{frame}
 
 
@@ -50,7 +57,7 @@
     \subsection{What is an antibody ?}
     \input{sections/1.1_what_is_an_antibody.tex}
 
-    \subsection{Difference between monoclonal and polyclonal antibodies}
+    \subsection{Monoclonal \textit{versus} polyclonal antibodies}
     \input{sections/1.2_difference_monoclonal_polyclonal.tex}
 
     \subsection{Production of monoclonal antibodies}
