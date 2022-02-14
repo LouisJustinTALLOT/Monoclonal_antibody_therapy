@@ -6,8 +6,8 @@
 % \usepackage{csquotes}
 
 % with xelatex
-\usepackage{fontspec}  % fontspec et xunicode sont facultatifs
-\usepackage{xunicode}  % pour les versions postérieures à 2018.
+% \usepackage{fontspec}  % fontspec et xunicode sont facultatifs
+% \usepackage{xunicode}  % pour les versions postérieures à 2018.
 
 \usepackage[a4paper, left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
 \setlength{\parindent}{1em}
@@ -21,8 +21,12 @@
 \usepackage[none]{hyphenat}
 
 \usepackage{graphicx}
+\usepackage{float}
+\usepackage{wrapfig}
 
-\usepackage{biblatex}
+\usepackage[language=australian]{biblatex}
+
+\usepackage[hidelinks]{hyperref}
 
 \title{
   \textbf{Monoclonal Antibody Therapy}
@@ -50,6 +54,7 @@
     \input{sections/1.2_difference_monoclonal_polyclonal.tex}
 
     \subsection{Production of monoclonal antibodies}
+    \label{sec:monoclonal_antibody_production}
     \input{sections/1.3_production_monoclonal_antibodies.tex}
 
     \subsection{Characteristics of a monoclonal antibody}
@@ -72,4 +77,5 @@
 
   \printbibliography
 
+  \listoffigures
 \end{document}
