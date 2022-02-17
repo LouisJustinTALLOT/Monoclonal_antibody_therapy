@@ -11,4 +11,7 @@
 **.out
 **.nav
 **.snm
+**.vrb
+**.fls
+**.lof
 .vscode
